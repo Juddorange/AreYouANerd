@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
+html, body {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  background : linear-gradient(#fefee0, #e08100);
+  width: 100%;
+  height: 100%;
+}
+
+/* .big_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: space-around;
+} */
+
+h1 {
+  text-shadow: 1px 1px 2px;
+  font-size: 60px;
+}
+
+.start {
+  padding: 80px;
+  align-self: center;
+  text-align: center;
+}
+
+.btn {
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 5px;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 20px;
+  border: solid 2px #fff0bc;
+  background-color: #fff0bc;
+  color: black;
+  cursor: pointer;
+}
+
+.title_container {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+.image_start {
+  display: flex;
+  flex-direction: row;
+}
+
+.image_container1 {
+  height: 350px;
+  width: 50%;
+  background-image: url("./Images/histoire.jpg");
+  background-size: cover;
+
+}
+.image_container2 {
+  height: 350px;
+  width: 50%;
+  background-image: url("./Images/geographie.jpg");
+  background-size: cover;
+}

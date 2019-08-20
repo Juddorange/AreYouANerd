@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
+html, body{
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  background : linear-gradient(#fefee0, #e08100);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-shadow: 1px 1px 2px;
+  font-size: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn {
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 30px;
+  border: solid 2px #fff0bc;
+  background-color: #fff0bc;
+  color: black;
+  cursor: pointer;
+}
+
+.title_container {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding:20px;
+}
+
+#test {
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  font-size: 50px;
+  font-style: italic;
+  color: #660000;
+  text-shadow: 1px 1px 2px;
+  margin-bottom: 30px;
+}
+
+#A, #B, #C {
+  margin: 20px;
+  display: inline-flex;
+  font-size: 23px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.headline {
+  margin: 0;
+}
+
+.green {
+  border: solid 6px green;
+}
+
+#score {
+  font-size: 30px;
+  font-style: bold;
+  text-align: center;
+}
+
+.red {
+  border: solid 6px red;
+}
+
+.btn_next {
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 30px;
+  border: solid 2px #fff0bc;
+  background-color: #fff0bc;
+  color: black;
+  cursor: pointer;
+}
+
+audio {
+  display: none;
+}
+
+.info {
+  font-size: 25px;
+}
