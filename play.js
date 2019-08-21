@@ -279,7 +279,7 @@ function startGame(mode){
     let info = myQuestions[qIndex].info;
 
     document.getElementById("test").innerHTML = ` "${q}" `;
-    document.getElementById("test").innerHTML += `<div class="image"><img src="${image}"></div>`
+    document.querySelector(".headline :last-child").innerHTML += `<div class="image"><img class="image_container" src="${image}"></div>`
     document.getElementById("A").innerHTML = `${answerA}`;
     document.getElementById("B").innerHTML = `${answerB}`;
     document.getElementById("C").innerHTML = `${answerC}`;
@@ -294,7 +294,7 @@ function startGame(mode){
         document.getElementById("score").innerHTML = `Score : ${score}/${allQuestion}`;
         propositions.classList.add("green");
         propositions.classList.remove("red");
-        document.getElementById("test").innerHTML = `<img src="${image}"><br>"<i class="info">${info}</i>"`;
+        document.querySelector(".headline :last-child").innerHTML = `<div class="image"><img class="image_container" src="${image}"><br><i class="info">"${info}"</i></div>`;
         clearInterval(intervalId);
         currentTime=1;
       }
@@ -302,7 +302,7 @@ function startGame(mode){
         document.getElementById("score").innerHTML = `Score : ${score}/${allQuestion}`;
         propositions.classList.add("red");
         propositions.classList.remove("green");
-        document.getElementById("test").innerHTML = `<img src="${image}"><br>"<i class="info">${info}</i>"`;
+        document.querySelector(".headline :last-child").innerHTML = `<div class="image"><img class="image_container" src="${image}"><br><i class="info">"${info}"</i></div>`;
         clearInterval(intervalId);
         currentTime=1;
       }

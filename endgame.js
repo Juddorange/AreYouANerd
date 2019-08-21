@@ -1,8 +1,20 @@
 let thisScore = localStorage.getItem("score");
 document.querySelector(".score").innerHTML = `<u>Score</u> : ${thisScore}/20`;
 
+
 let thisTime = localStorage.getItem("totalTime");
-document.querySelector(".totalTime").innerHTML =`<u>Total time</u> : ${thisTime} seconds`;
+
+function getMinutes() {
+  var minute=Math.floor(thisTime/60);
+  return minute;
+}
+
+function getSeconds() {
+var second=thisTime%60;
+return second;
+}
+
+document.querySelector(".totalTime").innerHTML =`<i>Total time - ${getMinutes()} min and ${getSeconds()} seconds</i>`;
 
 var gifs = [
   {
