@@ -109,3 +109,26 @@ audio {
 .info {
   font-size: 25px;
 }
+
+.score_time {
+  display: flex;
+  justify-content: space-around;
+}
+
+#time {
+  font-size: 30px;
+  font-style: bold;
+  text-align: center;
+}
+
+.ok{
+  color: green;
+}
+
+.warning {
+  color: orange;
+}
+
+.danger {
+  color: red;
+}

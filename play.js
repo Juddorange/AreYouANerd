@@ -1,6 +1,8 @@
 //All my informations for the quizz: questions, answers ...
 const myQuestions = [
+  //History
   {
+    id: "1",
     question: "Who was Tutankhamun ?",
     img: "Images/Toutankhamon.jpg",
     answers: {
@@ -12,6 +14,7 @@ const myQuestions = [
     info: "Tutankhamun died at the age of 19."
   },
   {
+    id: "2",
     question: "When did the massacre of St. Bartholomew occur ? ",
     img: "Images/Saint-Barthélémy.jpg",
     answers: {
@@ -23,6 +26,7 @@ const myQuestions = [
     info: "This massacre takes place between christians and protestants."
   },
   {
+    id: "3",
     question: "Which battle did François I win in 1515 ?",
     img: "Images/Marignan.jpg",
     answers: {
@@ -31,9 +35,10 @@ const myQuestions = [
       c: "Marignan"
     },
     correctAnswer: "Marignan",
-    info: "It's a famous battle against Switzerland during Wars of Italy."
+    info: "Marignan is a famous battle against Switzerland during Wars of Italy."
   },
   {
+    id: "4",
     question: "When was Caesar killed ?",
     img: "Images/César.jpg",
     answers: {
@@ -45,6 +50,7 @@ const myQuestions = [
     info: "He was killed by his politicians and could never become emperor."
   },
   {
+    id: "5",
     question: "Who was the pope that launched the first crusade ?",
     img: "./Images/Croisade.jpg",
     answers: {
@@ -56,6 +62,68 @@ const myQuestions = [
     info: "The first crusade took place following, among others, the refusal in 1078 of the Turks to give free passage to Christian pilgrims to Jerusalem. This crusade ends with the capture of Jerusalem and the creation of the Christian kingdom of Jerusalem."
   },
   {
+    id: "6",
+    question: "",
+    img: "",
+    answers: {
+      a: "",
+      b: "",
+      c: ""
+    },
+    correctAnswer: "",
+    info: ""
+  },
+  {
+    id: "7",
+    question: "",
+    img: "",
+    answers: {
+      a: "",
+      b: "",
+      c: ""
+    },
+    correctAnswer: "",
+    info: ""
+  },
+  {
+    id: "8",
+    question: "",
+    img: "",
+    answers: {
+      a: "",
+      b: "",
+      c: ""
+    },
+    correctAnswer: "",
+    info: ""
+  },
+  {
+    id: "9",
+    question: "",
+    img: "",
+    answers: {
+      a: "",
+      b: "",
+      c: ""
+    },
+    correctAnswer: "",
+    info: ""
+  },
+  {
+    id: "10",
+    question: "",
+    img: "",
+    answers: {
+      a: "",
+      b: "",
+      c: ""
+    },
+    correctAnswer: "",
+    info: ""
+  },
+  //Geography
+  {
+    id: "11",
     question: "What is the longest river in France?",
     img: "Images/Loire.jpg",
     answers: {
@@ -64,9 +132,10 @@ const myQuestions = [
       c: "My tears"
     },
     correctAnswer: "The Loire",
-    info: "The Loire measure 1 012 kilometers."
+    info: "It measures 1 012 kilometers."
   },
   {
+    id: "12",
     question: "What is the capital of Greenland ?",
     img: "Images/Nuuk.jpeg",
     answers: {
@@ -75,9 +144,10 @@ const myQuestions = [
       c: "Nuuk"
     },
     correctAnswer: "Nuuk",
-    info:"Nuuk is situated west of Greenland and count 17 984 inhabitants."
+    info:"The capital, Nuuk, is situated west of Greenland and count 17 984 inhabitants."
   },
   {
+    id: "13",
     question: "Which country has the greatest population ?",
     img: "Images/inde.jpg",
     answers: {
@@ -89,6 +159,7 @@ const myQuestions = [
     info:"There is 1 billion and 300 millions of inhabitants in India."
   },
   {
+    id: "14",
     question: "Where can we find the most dangerous spider ?",
     img: "Images/araignée.jpg",
     answers: {
@@ -100,6 +171,7 @@ const myQuestions = [
     info: "They are called Brazilian wandering spiders, armed spiders or banana spiders and it's one of the most venemous spiders on Earth, although antivenin makes death unlikely"
   },
   {
+    id: "15",
     question: "How much does the Marianne pit measure?",
     img: "Images/marianne.jpg",
     answers: {
@@ -110,18 +182,76 @@ const myQuestions = [
     correctAnswer: "11 kilometers",
     info:"The Marianne pit is the deepest oceanic pit and the deepest place of the Earth's crust. It's situated in the North-West of the Pacific ocean, near the Marianne's Island."
   },
+  {
+    id: "16",
+    question: "Which country is the 5th largest of the world ?",
+    img: "./Images/5.jpg",
+    answers: {
+      a: "China",
+      b: "Brazil",
+      c: "Luxembourg"
+    },
+    correctAnswer: "Brazil",
+    info: "Brazil stretches over 8 515 770 km²."
+  },
+  {
+    id: "17",
+    question: "Which country is the smallest of the world ?",
+    img: "./Images/small.jpg",
+    answers: {
+      a: "Vatican",
+      b: "Monaco",
+      c: "Gibraltar"
+    },
+    correctAnswer: "Vatican",
+    info: "City State in the city of Rome, this state which is in full heart of Rome extends on only 0.44 km²."
+  },
+  {
+    id: "18",
+    question: "Which country has the largest maritime domain in the world?",
+    img: "./Images/cost.jpg",
+    answers: {
+      a: "France",
+      b: "Canada",
+      c: "United States"
+    },
+    correctAnswer: "United States",
+    info: "United States has 11,3 millions km² of maritime domain. Just behind you will find France with 10,8 millions km² of maritime domain, thanks to the French Polynesia."
+  },
+  {
+    id: "19",
+    question: "What do Artic and Antarctic mean ?",
+    img: "./Images/arctic-antarctic.jpg",
+    answers: {
+      a: "Seal and penguins",
+      b: "North and South",
+      c: "Bear and no bear"
+    },
+    correctAnswer: "Bear and no bear",
+    info: "The word 'Arctic' comes from the Greek 'arktikos' = 'near the bear, northern'. You can find bears in the Arctic but not in Antarctic."
+  },
+  {
+    id: "20",
+    question: "How many time zones are there ?",
+    img: "./Images/world.jpg",
+    answers: {
+      a: "24",
+      b: "25",
+      c: "23"
+    },
+    correctAnswer: "24",
+    info: "If every time zone were one hour apart, there would be a total of 24 across the world. However, some of them have 30 and 45 minutes offsets, a situation which makes the total number in the world much higher."
+  },
 ];
-
 
 //Variables that I need for the code
 var qIndex = Number(window.localStorage.getItem("qIndex")) || 0;
 var score = 0;
 var turn =0;
 var allQuestion = myQuestions.length;
-var start = document.querySelectorAll(".btn_answer");
 var intervalId = 0;
-var currentTime = 0;
-
+var currentTime = 1;
+var time = document.getElementById("time");
 
 if (qIndex) startGame();
 else startGame("init");
@@ -138,6 +268,7 @@ function prepareNext() {
 
 //functions that start the game. It will print the questions + answer
 function startGame(mode){
+  startClick();
   if(mode === "init") qIndex = 0;
     let q = myQuestions[qIndex].question;
     var image = myQuestions[qIndex].img;
@@ -159,19 +290,20 @@ function startGame(mode){
       let propositions = e.target;
       if (myQuestions[qIndex].correctAnswer === propositions.innerHTML){
         score++;
-        document.getElementById("score").innerHTML = `SCORE : ${score}/${allQuestion}`;
+        document.getElementById("score").innerHTML = `Score : ${score}/${allQuestion}`;
         propositions.classList.add("green");
         propositions.classList.remove("red");
         document.getElementById("test").innerHTML = `<img src="${image}"><br>"<i class="info">${info}</i>"`;
         clearInterval(intervalId);
-        currentTime=0;
+        currentTime=1;
       }
       else {
+        document.getElementById("score").innerHTML = `Score : ${score}/${allQuestion}`;
         propositions.classList.add("red");
         propositions.classList.remove("green");
         document.getElementById("test").innerHTML = `<img src="${image}"><br>"<i class="info">${info}</i>"`;
         clearInterval(intervalId);
-        currentTime=0;
+        currentTime=1;
       }
     }
   });
@@ -184,34 +316,60 @@ function endGame() {
   window.location.href = "./endgame.html";
 }
 
-//function that stop the time, restart the current time and if the time is over, pass to the next question
-function stopClick(){
-  clearInterval(intervalId);
-  currentTime= 0;
-  next.click();
-}
-
 //function that start the time and end it if the time is over
 function startClick() {
   intervalId=setInterval(()=>{
-    if (currentTime<10){
-    currentTime++;
+    if (currentTime<4){
+    
+    time.innerHTML= currentTime;
+    time.classList.add("ok");
+    time.classList.remove("danger");
+    time.classList.remove("warning");
     console.log(currentTime);
     }
+    else if (currentTime<7 && currentTime>3){
+
+      time.innerHTML= currentTime;
+      time.classList.add("warning");
+      time.classList.remove("danger");
+      time.classList.remove("ok");
+      console.log(currentTime);
+    }
+    else if (currentTime<11 && currentTime>6){
+      time.innerHTML= currentTime;
+      time.classList.add("danger");
+      time.classList.remove("warning");
+      time.classList.remove("ok");
+      console.log(currentTime);
+    }
     else {stopClick()}
+    currentTime++;
   },1000);
   return currentTime;
 }
+
+//function that stop the time, restart the current time and if the time is over, go to the next question
+function stopClick(){
+  clearInterval(intervalId);
+  currentTime= 1;
+  time.innerHTML= currentTime;
+  next.click();
+}
+
+//function that print the time
+
 
 //all the action when you click on the next button
 const next = document.querySelector(".btn_next");
 next.onclick = () => {
   turn++;
-  if(turn>9) endGame();
+  if(turn>19) {
+    endGame();
+    clearInterval(intervalId);
+  }
   else {
   prepareNext();
   startGame();
-  startClick();
   }
 };
 
