@@ -54,14 +54,14 @@ h1 {
 }
 
 .image_container1 {
-  height: 350px;
+  height: 400px;
   width: 50%;
   background-image: url("./Images/histoire.jpg");
   background-size: cover;
 
 }
 .image_container2 {
-  height: 350px;
+  height: 400px;
   width: 50%;
   background-image: url("./Images/geographie.jpg");
   background-size: cover;

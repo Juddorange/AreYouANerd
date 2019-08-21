@@ -42,11 +42,11 @@ const myQuestions = [
     question: "When was Caesar killed ?",
     img: "Images/César.jpg",
     answers: {
-      a: "33 BC",
+      a: "44 BC",
       b: "Yesterday",
       c: "79 AD"
     },
-    correctAnswer: "33 BC",
+    correctAnswer: "44 BC",
     info: "He was killed by his politicians and could never become emperor."
   },
   {
@@ -63,63 +63,63 @@ const myQuestions = [
   },
   {
     id: "6",
-    question: "",
-    img: "",
+    question: "From whom were the Americas named ?",
+    img: "./Images/amerigo.jpg",
     answers: {
-      a: "",
-      b: "",
-      c: ""
+      a: "Amerigo Vespucci",
+      b: "Americano Rojas",
+      c: "Amero Almeida"
     },
-    correctAnswer: "",
-    info: ""
+    correctAnswer: "Amerigo Vespucci",
+    info: "He is considered the first European to understand that the lands discovered by Christopher Columbus are part of a new continent. In his honor, this new world was named 'America' ​​in a world map published in 1507 by a cartographer."
   },
   {
     id: "7",
-    question: "",
-    img: "",
+    question: "Who was the first emperor of the Roman Empire ?",
+    img: "./Images/empire.png",
     answers: {
-      a: "",
-      b: "",
-      c: ""
+      a: "Octave",
+      b: "Auguste",
+      c: "Caligula"
     },
-    correctAnswer: "",
-    info: ""
+    correctAnswer: "Auguste",
+    info: "Octave became emperor of the Roman Empire in 27 BC and took the name of Auguste, which means 'consecrated by the omens'."
   },
   {
     id: "8",
-    question: "",
-    img: "",
+    question: "How long did the Middle Age last",
+    img: "./Images/ma.jpg",
     answers: {
-      a: "",
-      b: "",
-      c: ""
+      a: "2 centuries",
+      b: "6 centuries",
+      c: "10 centuries"
     },
-    correctAnswer: "",
-    info: ""
+    correctAnswer: "10 centuries",
+    info: "The Middle Age lasts 10 centuries, between 476 (when the Occidental Roman Empire collapsed) and the XVth century (many dates can be taken to end the Middle Age, especially 1453 with the end of the 100 years War, the fall of the Oriental Roman Empire and the fall of the city Constantinople)."
   },
   {
     id: "9",
-    question: "",
-    img: "",
+    question: "Who was the first to discover America ?",
+    img: "./Images/ameriques.jpg",
     answers: {
-      a: "",
-      b: "",
-      c: ""
+      a: "Christopher Columbus",
+      b: "Jacques Cartier",
+      c: "The Vikings"
     },
-    correctAnswer: "",
-    info: ""
+    correctAnswer: "The Vikings",
+    info: "The Vikings sailed in North America nearly 500 years before Christophus Columbus, but never settled there."
   },
   {
     id: "10",
-    question: "",
-    img: "",
+    question: "What was the first name of the capital Istanbul ?",
+    img: "./Images/istanbul.jpg",
     answers: {
-      a: "",
-      b: "",
-      c: ""
+      a: "Byzantium",
+      b: "Lutetia",
+      c: "Halicarnasse"
     },
-    correctAnswer: "",
-    info: ""
+    correctAnswer: "Byzantium",
+    info: "Istanbul change its name two times. The first time was in 330 AD when the roman emperor Constantin I rebuilt the city and became the capital of the Oriental Roman Empire. Then in 1453, the city fall to the hands of Turkey and is only renamed in 1930 in Istanbul."
   },
   //Geography
   {
@@ -161,7 +161,7 @@ const myQuestions = [
   {
     id: "14",
     question: "Where can we find the most dangerous spider ?",
-    img: "Images/araignée.jpg",
+    img: "./Images/araignée.jpg",
     answers: {
       a: "Under my bed",
       b: "Brazil",
@@ -252,6 +252,7 @@ var allQuestion = myQuestions.length;
 var intervalId = 0;
 var currentTime = 1;
 var time = document.getElementById("time");
+var totalTime = 0;
 
 if (qIndex) startGame();
 else startGame("init");
@@ -313,6 +314,7 @@ function startGame(mode){
 function endGame() {
   localStorage.setItem("qIndex", 0);
   localStorage.setItem("score", score);
+  localStorage.setItem("totalTime", totalTime)
   window.location.href = "./endgame.html";
 }
 
@@ -320,15 +322,13 @@ function endGame() {
 function startClick() {
   intervalId=setInterval(()=>{
     if (currentTime<4){
-    
-    time.innerHTML= currentTime;
-    time.classList.add("ok");
-    time.classList.remove("danger");
-    time.classList.remove("warning");
-    console.log(currentTime);
+      time.innerHTML= currentTime;
+      time.classList.add("ok");
+      time.classList.remove("danger");
+      time.classList.remove("warning");
+      console.log(currentTime);
     }
     else if (currentTime<7 && currentTime>3){
-
       time.innerHTML= currentTime;
       time.classList.add("warning");
       time.classList.remove("danger");
@@ -343,7 +343,8 @@ function startClick() {
       console.log(currentTime);
     }
     else {stopClick()}
-    currentTime++;
+    currentTime++
+    totalTime+=1;
   },1000);
   return currentTime;
 }
@@ -353,11 +354,11 @@ function stopClick(){
   clearInterval(intervalId);
   currentTime= 1;
   time.innerHTML= currentTime;
+  time.classList.add("ok");
+  time.classList.remove("danger");
+  time.classList.remove("warning");
   next.click();
 }
-
-//function that print the time
-
 
 //all the action when you click on the next button
 const next = document.querySelector(".btn_next");
@@ -368,9 +369,10 @@ next.onclick = () => {
     clearInterval(intervalId);
   }
   else {
-  prepareNext();
-  startGame();
+    prepareNext();
+    startGame();
   }
 };
 
 export default score;
+export {time}

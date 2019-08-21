@@ -54,9 +54,18 @@ a {
   margin: 50px;
   color: #660000;
   text-shadow: 1px 1px 2px;
+  text-align: center;
 }
 
 .answer {
+  font-size: 30px;
+  margin: 30px;
+  text-shadow: 1px 1px 2px;
+  color: black;
+  text-align: center;
+}
+
+.totalTime {
   font-size: 30px;
   margin: 30px;
   text-shadow: 1px 1px 2px;

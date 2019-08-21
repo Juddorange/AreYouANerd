@@ -1,5 +1,8 @@
 let thisScore = localStorage.getItem("score");
-document.querySelector(".score").innerHTML = `Score : ${thisScore}/20`;
+document.querySelector(".score").innerHTML = `<u>Score</u> : ${thisScore}/20`;
+
+let thisTime = localStorage.getItem("totalTime");
+document.querySelector(".totalTime").innerHTML =`<u>Total time</u> : ${thisTime} seconds`;
 
 var gifs = [
   {
@@ -10,7 +13,7 @@ var gifs = [
   },
   {
     id: "1",
-    name: "youshallnotpass",
+    name: "youshallnotpass2",
     link: "https://media.giphy.com/media/njYrp176NQsHS/giphy.gif",
     answer: "Come back to school !"
   },
@@ -22,7 +25,7 @@ var gifs = [
   },
   {
     id: "3",
-    name: "gollumscream",
+    name: "gollumscream2",
     link: "https://media.giphy.com/media/ckvuK4mlUuohi/giphy.gif",
     answer: "This is embarassing ..."
   },
@@ -34,7 +37,7 @@ var gifs = [
   },
   {
     id: "5",
-    name: "samdrawning",
+    name: "samdrawning2",
     link: "https://media.giphy.com/media/JDskI2kdiuvF6/giphy.gif",
     answer: "You still suck ...."
   },
@@ -46,7 +49,7 @@ var gifs = [
   },
   {
     id: "7",
-    name: "gandalfaragorn",
+    name: "gandalfaragorn2",
     link: "https://media.giphy.com/media/FjkRzWWLic9eo/giphy.gif",
     answer: "My little sister can do better than you, and she is 5."
   },
@@ -58,7 +61,7 @@ var gifs = [
   },
   {
     id: "9",
-    name: "gimlihope",
+    name: "gimlihope2",
     link: "https://media.giphy.com/media/O8fQM2yVGnbva/giphy.gif",
     answer: "Come on ! You can do better !"
   },
@@ -70,7 +73,7 @@ var gifs = [
   },
   {
     id: "11",
-    name: "frodonlost",
+    name: "frodonlost2",
     link: "https://media.giphy.com/media/XWt4WxJQEo5kk/giphy.gif",
     answer: "I believe in you, keep going !"
   },
@@ -82,7 +85,7 @@ var gifs = [
   },
   {
     id: "13",
-    name: "legolasaragorn",
+    name: "legolasaragorn2",
     link: "https://media.giphy.com/media/1O3xRyXTEorZK/giphy.gif",
     answer: "That's alright, but I'm sure you can do better !"
   },
@@ -94,7 +97,7 @@ var gifs = [
   },
   {
     id: "15",
-    name: "gollum",
+    name: "gollum2",
     link: "https://media.giphy.com/media/Cr7yTbjNuY27C/giphy.gif",
     answer: "Yes, you were almost a very good student."
   },
@@ -106,7 +109,7 @@ var gifs = [
   },
   {
     id: "17",
-    name: "frodonhappy",
+    name: "frodonhappy2",
     link: "https://media.giphy.com/media/tTC52LRfnUgxO/giphy.gif",
     answer: "So close to the goal !"
   },
@@ -118,7 +121,7 @@ var gifs = [
   },
   {
     id: "19",
-    name: "theshire",
+    name: "theshire2",
     link: "https://media.giphy.com/media/zGnnFpOB1OjMQ/giphy.gif",
     answer: "I see, you were listenning in class (and not talking to your classmate)."
   },
