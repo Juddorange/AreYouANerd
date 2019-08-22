@@ -10,18 +10,9 @@ html, body{
   box-sizing: border-box;
 }
 
-.big_container {
-  height: 100vh;
-}
-
 h1 {
   text-shadow: 1px 1px 2px;
   font-size: 40px;
-}
-
-h2 {
-  line-height: 1;
-  /* margin: 40px; */
 }
 
 a {
@@ -32,9 +23,9 @@ a {
 .btn {
   font-family: "Courier New", Courier, monospace;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 10px;
   text-transform: uppercase;
-  padding: 30px;
+  padding: 20px;
   border: solid 2px #fff0bc;
   background-color: #fff0bc;
   color: black;
@@ -61,17 +52,17 @@ a {
 #test {
   font-family: 'Cinzel', serif;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   font-style: italic;
   color: #660000;
   text-shadow: 1px 1px 2px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #A, #B, #C {
   margin: 20px;
   display: inline-flex;
-  font-size: 23px;
+  font-size: 15px;
 }
 
 .image {
@@ -83,7 +74,7 @@ a {
 
 .headline {
   margin: 0;
-  height: 600px;
+  height: 450px;
   display: flex;
   justify-content: center;
 }
@@ -93,7 +84,7 @@ a {
 }
 
 #score {
-  font-size: 30px;
+  font-size: 20px;
   font-style: bold;
   text-align: center;
 }
@@ -105,9 +96,9 @@ a {
 .btn_next {
   font-family: "Courier New", Courier, monospace;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 15px;
   text-transform: uppercase;
-  padding: 30px;
+  padding: 20px;
   border: solid 2px #fff0bc;
   background-color: #fff0bc;
   color: black;
@@ -119,7 +110,8 @@ audio {
 }
 
 .info {
-  font-size: 30px;
+  font-size: 20px;
+  margin: 20px;
 }
 
 .score_time {
@@ -129,7 +121,7 @@ audio {
 }
 
 #time {
-  font-size: 50px;
+  font-size: 30px;
   font-style: bold;
   text-align: center;
 }
@@ -152,17 +144,17 @@ audio {
 }
 
 .image_container {
-  height: 500px;
+  height: 350px;
   margin-top: 20px;
 }
 
 .answer{
   color: green;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #turn {
-  font-size: 30px;
+  font-size: 20px;
   font-style: bold;
   text-align: center;
 }

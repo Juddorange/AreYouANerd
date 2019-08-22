@@ -12,9 +12,9 @@ html, body{
 
 h1 {
   text-shadow: 1px 1px 2px;
-  font-size: 60px;
+  font-size: 40px;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 a {
@@ -30,9 +30,9 @@ a {
 .btn {
   font-family: "Courier New", Courier, monospace;
   border-radius: 5px;
-  font-size: 30px;
+  font-size: 25px;
   text-transform: uppercase;
-  padding: 30px;
+  padding: 25px;
   border: solid 2px #fff0bc;
   background-color: #fff0bc;
   color: black;
@@ -73,5 +73,5 @@ a {
   text-align: center;
 }
 .gif_image{
-  height: 300px;
+  height: 250px;
 }
