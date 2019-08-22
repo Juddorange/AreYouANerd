@@ -296,7 +296,6 @@ function startGame(mode){
         score++;
         document.getElementById("score").innerHTML = `Score : ${score}/${allQuestion}`;
         propositions.classList.add("green");
-        propositions.classList.remove("red");
         buttonDisabledTrue()
         document.querySelector(".headline :last-child").innerHTML = `<div class="image"><img class="image_container" src="${image}"><br><div class="answer">"The correct answer is : ${correctAnswer}"</div><br><i class="info">"${info}"</i></div>`;
         clearInterval(intervalId);
@@ -305,7 +304,6 @@ function startGame(mode){
       else {
         document.getElementById("score").innerHTML = `Score : ${score}/${allQuestion}`;
         propositions.classList.add("red");
-        propositions.classList.remove("green");
         buttonDisabledTrue()
         document.querySelector(".headline :last-child").innerHTML = `<div class="image"><img class="image_container" src="${image}"><br><div class="answer">"The correct answer is : ${correctAnswer}"</div><br><i class="info">"${info}"</i></div>`;
         clearInterval(intervalId);
@@ -407,7 +405,7 @@ function endGame() {
 const next = document.querySelector(".btn_next");
 next.onclick = () => {
   turn++;
-  if(turn>19) {
+  if(turn>20) {
     endGame();
     clearInterval(intervalId);
   }
