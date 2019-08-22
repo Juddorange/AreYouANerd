@@ -16,7 +16,7 @@ html, body{
 
 h1 {
   text-shadow: 1px 1px 2px;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 h2 {
@@ -125,10 +125,11 @@ audio {
 .score_time {
   display: flex;
   justify-content: space-around;
+  margin: 0;
 }
 
 #time {
-  font-size: 30px;
+  font-size: 50px;
   font-style: bold;
   text-align: center;
 }
@@ -156,6 +157,12 @@ audio {
 }
 
 .answer{
-  color: black;
+  color: green;
   font-size: 30px;
+}
+
+#turn {
+  font-size: 30px;
+  font-style: bold;
+  text-align: center;
 }

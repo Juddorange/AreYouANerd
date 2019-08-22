@@ -4,7 +4,7 @@ const myQuestions = [
   {
     id: "1",
     question: "Who was Tutankhamun ?",
-    img: "Images/Toutankhamon.jpg",
+    img: "../Images/Toutankhamon.jpg",
     answers: {
       a: "An Emperor",
       b: "A Pharaoh",
@@ -16,7 +16,7 @@ const myQuestions = [
   {
     id: "2",
     question: "When did the massacre of St. Bartholomew occur ? ",
-    img: "Images/Saint-Barthélémy.jpg",
+    img: "../Images/Saint-Barthélémy.jpg",
     answers: {
       a: "24th august 1969",
       b: "24th august 500 BC",
@@ -28,7 +28,7 @@ const myQuestions = [
   {
     id: "3",
     question: "Which battle did François I win in 1515 ?",
-    img: "Images/Marignan.jpg",
+    img: "../Images/Marignan.jpg",
     answers: {
       a: "New York City",
       b: "Waterloo",
@@ -40,7 +40,7 @@ const myQuestions = [
   {
     id: "4",
     question: "When was Caesar killed ?",
-    img: "Images/César.jpg",
+    img: "../Images/César.jpg",
     answers: {
       a: "44 BC",
       b: "Yesterday",
@@ -52,7 +52,7 @@ const myQuestions = [
   {
     id: "5",
     question: "Who was the pope that launched the first crusade ?",
-    img: "./Images/Croisade.jpg",
+    img: "../Images/Croisade.jpg",
     answers: {
       a: "Pie I",
       b: "Urbain II",
@@ -64,7 +64,7 @@ const myQuestions = [
   {
     id: "6",
     question: "From whom were the Americas named ?",
-    img: "./Images/amerigo.jpg",
+    img: "../Images/amerigo.jpg",
     answers: {
       a: "Amerigo Vespucci",
       b: "Americano Rojas",
@@ -76,7 +76,7 @@ const myQuestions = [
   {
     id: "7",
     question: "Who was the first emperor of the Roman Empire ?",
-    img: "./Images/empire.png",
+    img: "../Images/empire.png",
     answers: {
       a: "Octave",
       b: "Auguste",
@@ -88,19 +88,19 @@ const myQuestions = [
   {
     id: "8",
     question: "How long did the Middle Age last",
-    img: "./Images/ma.jpg",
+    img: "../Images/ma.jpg",
     answers: {
       a: "2 centuries",
       b: "6 centuries",
       c: "10 centuries"
     },
     correctAnswer: "10 centuries",
-    info: "The Middle Age lasts 10 centuries, between 476 (when the Occidental Roman Empire collapsed) and the XVth century (many dates can be taken to end the Middle Age, especially 1453 with the end of the 100 years War, the fall of the Oriental Roman Empire and the fall of the city Constantinople)."
+    info: "The Middle Age lasts 10 centuries, between 476 (when the Occidental Roman Empire collapsed) and the XVth century (many dates can be taken, especially 1453 with the end of the 100 years War, the fall of the Oriental Roman Empire and the fall of the city Constantinople)."
   },
   {
     id: "9",
     question: "Who was the first to discover America ?",
-    img: "./Images/ameriques.jpg",
+    img: "../Images/ameriques.jpg",
     answers: {
       a: "Christopher Columbus",
       b: "Jacques Cartier",
@@ -112,7 +112,7 @@ const myQuestions = [
   {
     id: "10",
     question: "What was the first name of the capital Istanbul ?",
-    img: "./Images/istanbul.jpg",
+    img: "../Images/istanbul.jpg",
     answers: {
       a: "Byzantium",
       b: "Lutetia",
@@ -125,7 +125,7 @@ const myQuestions = [
   {
     id: "11",
     question: "What is the longest river in France?",
-    img: "Images/Loire.jpg",
+    img: "../Images/Loire.jpg",
     answers: {
       a: "The Loire",
       b: "The Rhône",
@@ -137,7 +137,7 @@ const myQuestions = [
   {
     id: "12",
     question: "What is the capital of Greenland ?",
-    img: "Images/Nuuk.jpeg",
+    img: "../Images/Nuuk.jpeg",
     answers: {
       a: "Illulissat",
       b: "Seal",
@@ -149,7 +149,7 @@ const myQuestions = [
   {
     id: "13",
     question: "Which country has the greatest population ?",
-    img: "Images/inde.jpg",
+    img: "../Images/inde.jpg",
     answers: {
       a: "India",
       b: "Bellegarde-en-Marche, a village in the Creuse",
@@ -161,7 +161,7 @@ const myQuestions = [
   {
     id: "14",
     question: "Where can we find the most dangerous spider ?",
-    img: "./Images/araignée.jpg",
+    img: "../Images/araignée.jpg",
     answers: {
       a: "Under my bed",
       b: "Brazil",
@@ -173,7 +173,7 @@ const myQuestions = [
   {
     id: "15",
     question: "How much does the Marianne pit measure?",
-    img: "Images/marianne.jpg",
+    img: "../Images/marianne.jpg",
     answers: {
       a: "120 meters",
       b: "15 000 kilometers",
@@ -185,7 +185,7 @@ const myQuestions = [
   {
     id: "16",
     question: "Which country is the 5th largest of the world ?",
-    img: "./Images/5.jpg",
+    img: "../Images/5.jpg",
     answers: {
       a: "China",
       b: "Brazil",
@@ -197,7 +197,7 @@ const myQuestions = [
   {
     id: "17",
     question: "Which country is the smallest of the world ?",
-    img: "./Images/small.jpg",
+    img: "../Images/small.jpg",
     answers: {
       a: "Vatican",
       b: "Monaco",
@@ -209,7 +209,7 @@ const myQuestions = [
   {
     id: "18",
     question: "Which country has the largest maritime domain in the world?",
-    img: "./Images/cost.jpg",
+    img: "../Images/cost.jpg",
     answers: {
       a: "France",
       b: "Canada",
@@ -221,7 +221,7 @@ const myQuestions = [
   {
     id: "19",
     question: "What do Artic and Antarctic mean ?",
-    img: "./Images/arctic-antarctic.jpg",
+    img: "../Images/arctic-antarctic.jpg",
     answers: {
       a: "Seal and penguins",
       b: "North and South",
@@ -233,7 +233,7 @@ const myQuestions = [
   {
     id: "20",
     question: "How many time zones are there ?",
-    img: "./Images/world.jpg",
+    img: "../Images/world.jpg",
     answers: {
       a: "24",
       b: "25",
@@ -247,7 +247,7 @@ const myQuestions = [
 //Variables that I need for the code
 var qIndex = Number(window.localStorage.getItem("qIndex")) || 0;
 var score = 0;
-var turn =0;
+var turn =1;
 var allQuestion = myQuestions.length;
 var intervalId = 0;
 var currentTime = 1;
@@ -280,7 +280,8 @@ function startGame(mode){
     var info = myQuestions[qIndex].info;
     var correctAnswer = myQuestions[qIndex].correctAnswer;
 
-    document.getElementById("test").innerHTML = ` "${q}" `;
+    document.getElementById("turn").innerHTML= `Turn : ${turn}/20`
+    document.getElementById("test").innerHTML = `"${q}"`;
     document.querySelector(".headline :last-child").innerHTML += `<div class="image"><img class="image_container" src="${image}"></div>`
     document.getElementById("A").innerHTML = `${answerA}`;
     document.getElementById("B").innerHTML = `${answerB}`;
@@ -306,7 +307,7 @@ function startGame(mode){
         propositions.classList.add("red");
         propositions.classList.remove("green");
         buttonDisabledTrue()
-        document.querySelector(".headline :last-child").innerHTML = `<div class="image"><img class="image_container" src="${image}"><br><i class="info">"${info}"</i></div>`;
+        document.querySelector(".headline :last-child").innerHTML = `<div class="image"><img class="image_container" src="${image}"><br><div class="answer">"The correct answer is : ${correctAnswer}"</div><br><i class="info">"${info}"</i></div>`;
         clearInterval(intervalId);
         currentTime=1;
       }

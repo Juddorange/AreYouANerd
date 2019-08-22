@@ -145,7 +145,7 @@ var gifs = [
   },
 ];
 
-document.querySelector(".gif").innerHTML = `<img src="${
+document.querySelector(".gif").innerHTML = `<img class="gif_image" src="${
   gifs[thisScore].link
 }"/>`;
 document.querySelector(".answer").innerHTML =`${gifs[thisScore].answer}`
