@@ -12,8 +12,6 @@ html, body{
 
 .big_container {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 h1 {
@@ -23,7 +21,7 @@ h1 {
 
 h2 {
   line-height: 1;
-  margin: 40px;
+  /* margin: 40px; */
 }
 
 a {
@@ -80,12 +78,14 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 100px;
-  height: 500px;
+  align-items: center;
 }
 
 .headline {
   margin: 0;
+  height: 600px;
+  display: flex;
+  justify-content: center;
 }
 
 .green {
@@ -119,7 +119,7 @@ audio {
 }
 
 .info {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .score_time {
@@ -147,4 +147,15 @@ audio {
 
 .bottom {
   height: 200px;
+  margin-top: 110px;
+}
+
+.image_container {
+  height: 500px;
+  margin-top: 20px;
+}
+
+.answer{
+  color: black;
+  font-size: 30px;
 }

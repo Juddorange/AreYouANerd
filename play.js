@@ -11,7 +11,7 @@ const myQuestions = [
       c: "A President"
     },
     correctAnswer: "A Pharaoh",
-    info: "Tutankhamun died at the age of 19."
+    info: "Tutankhamun died at the age of 19. Today he is famous because that's the only pharaoh's tumb we found totaly intact."
   },
   {
     id: "2",
@@ -19,7 +19,7 @@ const myQuestions = [
     img: "Images/Saint-Barthélémy.jpg",
     answers: {
       a: "24th august 1969",
-      b: "24th august 500BD",
+      b: "24th august 500 BC",
       c: "24th august 1572"
     },
     correctAnswer: "24th august 1572",
@@ -263,6 +263,7 @@ function prepareNext() {
   const green =  document.querySelector(".btn.green");
   if (red) red.classList.remove("red");
   if (green) green.classList.remove("green");
+  buttonDisabledFalse();
   qIndex++;
   window.localStorage.setItem("qIndex", qIndex);
 }
@@ -271,12 +272,13 @@ function prepareNext() {
 function startGame(mode){
   startClick();
   if(mode === "init") qIndex = 0;
-    let q = myQuestions[qIndex].question;
+    var q = myQuestions[qIndex].question;
     var image = myQuestions[qIndex].img;
-    let answerA = myQuestions[qIndex].answers.a;
-    let answerB = myQuestions[qIndex].answers.b;
-    let answerC = myQuestions[qIndex].answers.c;
-    let info = myQuestions[qIndex].info;
+    var answerA = myQuestions[qIndex].answers.a;
+    var answerB = myQuestions[qIndex].answers.b;
+    var answerC = myQuestions[qIndex].answers.c;
+    var info = myQuestions[qIndex].info;
+    var correctAnswer = myQuestions[qIndex].correctAnswer;
 
     document.getElementById("test").innerHTML = ` "${q}" `;
     document.querySelector(".headline :last-child").innerHTML += `<div class="image"><img class="image_container" src="${image}"></div>`
@@ -294,7 +296,8 @@ function startGame(mode){
         document.getElementById("score").innerHTML = `Score : ${score}/${allQuestion}`;
         propositions.classList.add("green");
         propositions.classList.remove("red");
-        document.querySelector(".headline :last-child").innerHTML = `<div class="image"><img class="image_container" src="${image}"><br><i class="info">"${info}"</i></div>`;
+        buttonDisabledTrue()
+        document.querySelector(".headline :last-child").innerHTML = `<div class="image"><img class="image_container" src="${image}"><br><div class="answer">"The correct answer is : ${correctAnswer}"</div><br><i class="info">"${info}"</i></div>`;
         clearInterval(intervalId);
         currentTime=1;
       }
@@ -302,6 +305,7 @@ function startGame(mode){
         document.getElementById("score").innerHTML = `Score : ${score}/${allQuestion}`;
         propositions.classList.add("red");
         propositions.classList.remove("green");
+        buttonDisabledTrue()
         document.querySelector(".headline :last-child").innerHTML = `<div class="image"><img class="image_container" src="${image}"><br><i class="info">"${info}"</i></div>`;
         clearInterval(intervalId);
         currentTime=1;
@@ -310,12 +314,42 @@ function startGame(mode){
   });
 }
 
-//function that will load the page to the end of the game
-function endGame() {
-  localStorage.setItem("qIndex", 0);
-  localStorage.setItem("score", score);
-  localStorage.setItem("totalTime", totalTime)
-  window.location.href = "./endgame.html";
+//function to disabled the button when clicked
+function buttonDisabledTrue(){
+  const btnA = document.getElementById("A");
+  const btnB = document.getElementById("B");
+  const btnC = document.getElementById("C");
+  if (btnA){
+    btnB.setAttribute("disabled", true);
+    btnC.setAttribute("disabled", true);
+  }
+  if(btnB){
+    btnA.setAttribute("disabled", true);
+    btnC.setAttribute("disabled", true);
+  }
+  if (btnC){
+    btnB.setAttribute("disabled", true);
+    btnA.setAttribute("disabled", true);
+    }
+}
+  
+//function to remove the disabled attribute when you clicked on the next question
+function buttonDisabledFalse(){
+    const btnA = document.getElementById("A");
+    const btnB = document.getElementById("B");
+    const btnC = document.getElementById("C");
+    if (btnA){
+      btnB.removeAttribute("disabled");
+      btnC.removeAttribute("disabled");
+    }
+    if(btnB){
+      btnA.removeAttribute("disabled");
+      btnC.removeAttribute("disabled");
+    }
+    if (btnC){
+      btnB.removeAttribute("disabled");
+      btnA.removeAttribute("disabled");
+      }
 }
 
 //function that start the time and end it if the time is over
@@ -358,6 +392,14 @@ function stopClick(){
   time.classList.remove("danger");
   time.classList.remove("warning");
   next.click();
+}
+
+//function that will load the page to the end of the game
+function endGame() {
+  localStorage.setItem("qIndex", 0);
+  localStorage.setItem("score", score);
+  localStorage.setItem("totalTime", totalTime)
+  window.location.href = "./endgame.html";
 }
 
 //all the action when you click on the next button
