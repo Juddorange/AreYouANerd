@@ -414,6 +414,3 @@ next.onclick = () => {
     startGame();
   }
 };
-
-export default score;
-export {time}
