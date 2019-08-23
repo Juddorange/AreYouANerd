@@ -315,61 +315,40 @@ function startGame(mode){
 
 //function to disabled the button when clicked
 function buttonDisabledTrue(){
-  const btnA = document.getElementById("A");
-  const btnB = document.getElementById("B");
-  const btnC = document.getElementById("C");
-  if (btnA){
-    btnB.setAttribute("disabled", true);
-    btnC.setAttribute("disabled", true);
-  }
-  if(btnB){
-    btnA.setAttribute("disabled", true);
-    btnC.setAttribute("disabled", true);
-  }
-  if (btnC){
-    btnB.setAttribute("disabled", true);
-    btnA.setAttribute("disabled", true);
-    }
+  document.getElementById("A").setAttribute("disabled", true);
+  document.getElementById("B").setAttribute("disabled", true);
+  document.getElementById("C").setAttribute("disabled", true);
 }
   
 //function to remove the disabled attribute when you clicked on the next question
 function buttonDisabledFalse(){
-    const btnA = document.getElementById("A");
-    const btnB = document.getElementById("B");
-    const btnC = document.getElementById("C");
-    if (btnA){
-      btnB.removeAttribute("disabled");
-      btnC.removeAttribute("disabled");
-    }
-    if(btnB){
-      btnA.removeAttribute("disabled");
-      btnC.removeAttribute("disabled");
-    }
-    if (btnC){
-      btnB.removeAttribute("disabled");
-      btnA.removeAttribute("disabled");
-      }
+  document.getElementById("A").removeAttribute("disabled");
+  document.getElementById("B").removeAttribute("disabled");
+  document.getElementById("C").removeAttribute("disabled");
+}
+
+//function when the time is ok
+function noDanger(){
+  time.classList.add("ok");
+  time.classList.remove("danger");
+  time.classList.remove("warning");
 }
 
 //function that start the time and end it if the time is over
 function startClick() {
   intervalId=setInterval(()=>{
-    if (currentTime<4){
-      time.innerHTML= currentTime;
-      time.classList.add("ok");
-      time.classList.remove("danger");
-      time.classList.remove("warning");
+    time.innerHTML= currentTime;
+    if (currentTime<6){
+      noDanger();
       console.log(currentTime);
     }
-    else if (currentTime<7 && currentTime>3){
-      time.innerHTML= currentTime;
+    else if (currentTime<11 && currentTime>5){
       time.classList.add("warning");
       time.classList.remove("danger");
       time.classList.remove("ok");
       console.log(currentTime);
     }
-    else if (currentTime<11 && currentTime>6){
-      time.innerHTML= currentTime;
+    else if (currentTime<16 && currentTime>10){
       time.classList.add("danger");
       time.classList.remove("warning");
       time.classList.remove("ok");
@@ -387,9 +366,7 @@ function stopClick(){
   clearInterval(intervalId);
   currentTime= 1;
   time.innerHTML= currentTime;
-  time.classList.add("ok");
-  time.classList.remove("danger");
-  time.classList.remove("warning");
+  noDanger();
   next.click();
 }
 
